@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#FAF6F2" />
+  <rect x="2" y="2" width="60" height="60" rx="14" stroke="#2D2724" stroke-opacity="0.1" stroke-width="2" />
+  <text x="12" y="43" font-family="Georgia, serif" font-size="28" font-weight="600" fill="#2D2724">AP</text>
+  <circle cx="51" cy="41" r="3.5" fill="#D38B78" />
+</svg>

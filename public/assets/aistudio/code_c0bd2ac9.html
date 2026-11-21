@@ -1,0 +1,849 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Andini Putri Ihsani — Information Systems Student Portfolio</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            page: '#FAF6F2',
+            surface: '#FFFFFF',
+            blush: '#F1D9D1',
+            sage: '#D8D8CE',
+            'sage-light': '#E9E9E2',
+            sand: '#ECE4DC',
+            terracotta: {
+              DEFAULT: '#D38B78',
+              hover: '#C27763',
+              subtle: '#FAF0ED'
+            },
+            olive: {
+              DEFAULT: '#545643',
+              hover: '#424434',
+              light: '#828471'
+            },
+            ink: {
+              primary: '#2D2724',
+              secondary: '#6E6560',
+              muted: '#9A908A'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          },
+          borderRadius: {
+            '3xl': '24px',
+            '4xl': '32px'
+          },
+          boxShadow: {
+            'soft': '0 10px 30px -5px rgba(45, 39, 36, 0.05)',
+            'card': '0 20px 40px -15px rgba(45, 39, 36, 0.08)',
+            'hover': '0 25px 50px -12px rgba(211, 139, 120, 0.25)'
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Aesthetic Styles -->
+<style data-purpose="custom-typography">
+    body {
+      background-color: #FAF6F2;
+      color: #2D2724;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+    
+    .font-editorial {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    /* Subtle paper texture overlay */
+    .bg-grain {
+      background-image: radial-gradient(rgba(45, 39, 36, 0.03) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+  </style>
+<style data-purpose="decorations">
+    /* Botanical leaf and organic curve masks */
+    .arch-mask {
+      border-radius: 260px 260px 24px 24px;
+    }
+    .pill-smooth {
+      border-radius: 9999px;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #D8D8CE;
+      border-radius: 3px;
+    }
+  </style>
+<!-- END: Custom Aesthetic Styles -->
+</head>
+<body class="bg-page bg-grain text-ink-primary antialiased selection:bg-terracotta/20 selection:text-ink-primary">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-[#FAF6F2]/80 backdrop-blur-md border-b border-[#2D2724]/5 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-6 sm:px-10 h-20 flex items-center justify-between">
+<!-- Brand Logo Monogram -->
+<a aria-label="Andini Putri Ihsani Home" class="group flex items-center space-x-1" href="#hero">
+<span class="font-editorial text-3xl font-semibold tracking-tight text-ink-primary group-hover:text-terracotta transition-colors">
+          AP<span class="text-terracotta font-serif">.</span>
+</span>
+</a>
+<!-- Desktop Navigation Menu -->
+<nav aria-label="Primary Navigation" class="hidden md:flex items-center space-x-8 text-xs font-semibold tracking-widest text-ink-secondary">
+<a class="hover:text-ink-primary transition-colors tracking-[0.2em]" href="#hero">HOME</a>
+<a class="hover:text-ink-primary transition-colors tracking-[0.2em]" href="#about">ABOUT</a>
+<a class="hover:text-ink-primary transition-colors tracking-[0.2em]" href="#focus">FOCUS</a>
+<a class="hover:text-ink-primary transition-colors tracking-[0.2em]" href="#projects">PROJECTS</a>
+<a class="hover:text-ink-primary transition-colors tracking-[0.2em]" href="#experience">EXPERIENCE</a>
+</nav>
+<!-- Header Action Pill Button -->
+<div class="flex items-center space-x-4">
+<a class="hidden sm:inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-terracotta text-white text-xs font-semibold tracking-wider hover:bg-terracotta-hover transition-all duration-200 shadow-sm hover:shadow hover:scale-[1.02]" href="#contact">
+<span>LET'S TALK</span>
+<svg class="w-3.5 h-3.5 transform group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative pt-8 pb-16 md:pt-14 md:pb-24 overflow-hidden" data-purpose="hero-banner" id="hero">
+<div class="max-w-7xl mx-auto px-6 sm:px-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Left Column: Editorial Headline & Bio -->
+<div class="lg:col-span-7 flex flex-col justify-center z-10">
+<!-- Eyebrow text -->
+<div class="flex items-center gap-3 mb-6">
+<span class="inline-block w-8 h-[1px] bg-terracotta"></span>
+<p class="text-xs uppercase tracking-[0.3em] font-semibold text-ink-secondary">
+                HI, I'M ANDINI PUTRI IHSANI
+              </p>
+<!-- 4-point sparkle icon -->
+<span class="text-terracotta text-sm animate-pulse">✦</span>
+</div>
+<!-- Big Editorial Typography -->
+<h1 class="font-editorial leading-[0.98] tracking-tight">
+<span class="block text-4xl sm:text-6xl md:text-7xl font-semibold text-terracotta">
+                INFORMATION
+              </span>
+<span class="block text-4xl sm:text-6xl md:text-7xl font-normal text-ink-primary mt-2">
+                SYSTEMS STUDENT
+              </span>
+</h1>
+<!-- Introduction text -->
+<p class="mt-8 text-base sm:text-lg text-ink-secondary font-light max-w-xl leading-relaxed">
+              A first-semester Information Systems undergraduate at <strong class="text-ink-primary font-medium">Institut Teknologi PLN</strong> passionate about digital innovation, data analysis, UI/UX design, and structured web development.
+            </p>
+<!-- Call to Actions -->
+<div class="mt-10 flex flex-wrap items-center gap-5 sm:gap-8">
+<a class="inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-terracotta text-white font-medium text-sm hover:bg-terracotta-hover transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5" href="#projects">
+<span>VIEW PORTFOLIO</span>
+<span class="text-base">→</span>
+</a>
+<a class="group inline-flex items-center gap-2 text-ink-primary font-semibold text-xs tracking-wider uppercase hover:text-terracotta transition-colors py-2" href="https://andiniputriihsani.wixsite.com/andinipi" rel="noopener noreferrer" target="_blank">
+<span>DOWNLOAD CV</span>
+<svg class="w-4 h-4 text-ink-muted group-hover:text-terracotta transition-transform group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+<!-- Subtle quote note -->
+<div class="mt-12 pt-6 border-t border-[#2D2724]/8 flex items-center gap-4">
+<span class="font-editorial italic text-2xl text-terracotta leading-none">“</span>
+<p class="text-xs text-ink-muted italic font-serif leading-relaxed">
+                Bridging structured logic, database thinking, and aesthetically intentional human interfaces.
+              </p>
+</div>
+</div>
+<!-- Right Column: Visual Composition with Organic Arch -->
+<div class="lg:col-span-5 relative flex justify-center items-center">
+<!-- Botanical Line Art Floating Top-Right (Decorative) -->
+<svg class="absolute -top-8 -right-4 w-44 h-44 text-olive/20 pointer-events-none z-0 transform rotate-12" fill="none" stroke="currentColor" viewBox="0 0 120 120">
+<path d="M60,110 C60,60 100,20 110,10" stroke-linecap="round" stroke-width="1.5"></path>
+<path d="M80,50 C95,45 105,30 95,20 C85,25 78,35 80,50 Z" fill="rgba(84, 86, 67, 0.08)" stroke-width="1.2"></path>
+<path d="M65,70 C80,68 90,55 82,45 C72,50 67,60 65,70 Z" fill="rgba(84, 86, 67, 0.08)" stroke-width="1.2"></path>
+<path d="M92,30 C105,25 110,12 100,5 C90,10 88,20 92,30 Z" fill="rgba(84, 86, 67, 0.08)" stroke-width="1.2"></path>
+</svg>
+<!-- Sparkling 4-point star decor -->
+<div class="absolute top-10 left-4 text-terracotta text-lg animate-bounce" style="animation-duration: 4s;">✦</div>
+<div class="absolute bottom-28 right-0 text-terracotta/70 text-sm">✦</div>
+<!-- Main Portrait Composition inside Organic Arch Backdrop -->
+<div class="relative w-full max-w-[380px]">
+<!-- Soft sage backdrop arch -->
+<div class="absolute inset-0 bg-[#E6E4DC] arch-mask transform -rotate-1 scale-105 opacity-80"></div>
+<!-- Inner Arch Card -->
+<div class="relative bg-blush/40 arch-mask overflow-hidden border-2 border-white/60 shadow-xl aspect-[3/4.2] flex flex-col justify-end">
+<!-- Gentle warm gradient glow -->
+<div class="absolute inset-0 bg-gradient-to-t from-sand/90 via-blush/20 to-transparent z-10 pointer-events-none"></div>
+<!-- Hero Editorial Image -->
+<img alt="Aesthetic student and digital designer portrait with soft warm lighting" class="w-full h-full object-cover object-center filter saturate-[0.95] contrast-[0.98]" loading="eager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACLkHIW9DDx-K--g-wCTV53GFcE2S7sg1zYyGdutKQ62OB9SAnmVMfqFX-ualvmBqor-Vun9ZYGXp0Zao_wzg9Uuz2jyi7nI1S1fKtniOGf2xL7ZW64Rn7m8efoTqzoJBiKxeZdthA6dZf5y3aNgXLo3GlhXsCJm1W-nWy_-blctjqrEF4X0nnzdqagJ1m0dfWYhQTXLZBKSoQasZvtdNQ6pa9KgjhPYoz9p9-LuVSDCMoaCW3EW02">
+<!-- Location Badge Pill (Matching Karachi badge in reference, adapted to Jakarta) -->
+<div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 z-20 w-max">
+<div class="bg-white/95 backdrop-blur-md px-5 py-2.5 rounded-full shadow-lg border border-[#2D2724]/5 flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-sand flex items-center justify-center text-terracotta">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="text-left leading-tight">
+<span class="block text-[9px] uppercase tracking-widest font-bold text-ink-muted">BASED IN</span>
+<span class="block font-editorial font-semibold text-xs tracking-wider text-terracotta uppercase">JAKARTA, INDONESIA</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: HighlightsBar (Stats Floating Bar matching reference) -->
+<section class="relative -mt-4 mb-20 z-20" data-purpose="metrics-summary">
+<div class="max-w-6xl mx-auto px-6 sm:px-10">
+<div class="bg-white rounded-3xl p-6 sm:p-8 shadow-card border border-[#2D2724]/5">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0 divide-y md:divide-y-0 md:divide-x divide-[#2D2724]/10">
+<!-- Metric 01: High School GPA -->
+<div class="flex flex-col items-center text-center p-3">
+<div class="w-10 h-10 rounded-full bg-blush/60 text-terracotta flex items-center justify-center mb-3">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<span class="font-editorial text-3xl sm:text-4xl font-semibold text-ink-primary">95.84</span>
+<span class="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-ink-muted mt-1">HIGH SCHOOL GPA (SMAN 1)</span>
+</div>
+<!-- Metric 02: Scholar Cohort -->
+<div class="flex flex-col items-center text-center p-3 pt-6 md:pt-3">
+<div class="w-10 h-10 rounded-full bg-sand text-ink-secondary flex items-center justify-center mb-3">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<span class="font-editorial text-3xl sm:text-4xl font-semibold text-ink-primary">2026</span>
+<span class="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-ink-muted mt-1">ITPLN IKATAN KERJA SCHOLAR</span>
+</div>
+<!-- Metric 03: Committee Experience -->
+<div class="flex flex-col items-center text-center p-3 pt-6 md:pt-3">
+<div class="w-10 h-10 rounded-full bg-blush/60 text-terracotta flex items-center justify-center mb-3">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<span class="font-editorial text-3xl sm:text-4xl font-semibold text-ink-primary">3+</span>
+<span class="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-ink-muted mt-1">LEADERSHIP &amp; COMMITTEE ROLES</span>
+</div>
+<!-- Metric 04: Dedication -->
+<div class="flex flex-col items-center text-center p-3 pt-6 md:pt-3">
+<div class="w-10 h-10 rounded-full bg-sand text-ink-secondary flex items-center justify-center mb-3">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<span class="font-editorial text-3xl sm:text-4xl font-semibold text-ink-primary">100%</span>
+<span class="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-ink-muted mt-1">DEDICATION TO DIGITAL GROWTH</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HighlightsBar -->
+<!-- BEGIN: FocusAreas (What I Do 4-Card Section) -->
+<section class="py-16" data-purpose="what-i-do-grid" id="focus">
+<div class="max-w-7xl mx-auto px-6 sm:px-10">
+<div class="mb-10">
+<p class="text-xs uppercase tracking-[0.25em] font-semibold text-ink-muted">WHAT I DO</p>
+<h2 class="font-editorial text-3xl sm:text-4xl font-semibold text-ink-primary mt-2">
+            Academic Focus &amp; Digital Disciplines
+          </h2>
+</div>
+<!-- 4 Tall Pastel Cards Matching Reference Palette -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1: Information Systems (Blush) -->
+<div class="bg-blush/60 hover:bg-blush/90 rounded-3xl p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-card min-h-[380px] border border-white/40">
+<div>
+<div class="w-12 h-12 rounded-full bg-white/80 flex items-center justify-center text-terracotta mb-6 shadow-sm">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7zm0 4h16M8 4v4m8-4v4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<h3 class="font-editorial text-xl font-bold uppercase tracking-tight text-ink-primary">
+                INFORMATION<br>SYSTEMS
+              </h3>
+<p class="mt-4 text-xs leading-relaxed text-ink-secondary">
+                Cultivating fundamental competencies in structured C++ programming, relational database schemas, algorithm design, and enterprise information pipelines.
+              </p>
+</div>
+<div class="pt-6 flex justify-between items-center">
+<span class="text-[11px] font-semibold tracking-wider text-ink-muted uppercase">01 / LOGIC</span>
+<div class="w-9 h-9 rounded-full bg-white flex items-center justify-center text-ink-primary shadow-sm hover:bg-terracotta hover:text-white transition-colors">
+<span class="text-sm">→</span>
+</div>
+</div>
+</div>
+<!-- Card 2: UI/UX & Infographics (Sage) -->
+<div class="bg-sage/50 hover:bg-sage/80 rounded-3xl p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-card min-h-[380px] border border-white/40">
+<div>
+<div class="w-12 h-12 rounded-full bg-white/80 flex items-center justify-center text-olive mb-6 shadow-sm">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<h3 class="font-editorial text-xl font-bold uppercase tracking-tight text-ink-primary">
+                UI/UX &amp;<br>INFOGRAPHICS
+              </h3>
+<p class="mt-4 text-xs leading-relaxed text-ink-secondary">
+                Crafting visual summaries, editorial infographics, and responsive mockups. Distilling complex academic and technical ideas into harmonious visuals.
+              </p>
+</div>
+<div class="pt-6 flex justify-between items-center">
+<span class="text-[11px] font-semibold tracking-wider text-ink-muted uppercase">02 / VISUAL</span>
+<div class="w-9 h-9 rounded-full bg-white flex items-center justify-center text-ink-primary shadow-sm hover:bg-terracotta hover:text-white transition-colors">
+<span class="text-sm">→</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Web Development (Sand/Blush) -->
+<div class="bg-blush/60 hover:bg-blush/90 rounded-3xl p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-card min-h-[380px] border border-white/40">
+<div>
+<div class="w-12 h-12 rounded-full bg-white/80 flex items-center justify-center text-terracotta mb-6 shadow-sm">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<h3 class="font-editorial text-xl font-bold uppercase tracking-tight text-ink-primary">
+                WEB<br>DEVELOPMENT
+              </h3>
+<p class="mt-4 text-xs leading-relaxed text-ink-secondary">
+                Designing modern web portals, cloud-hosted portfolios, and interactive web elements with semantic architecture and mobile-first responsiveness.
+              </p>
+</div>
+<div class="pt-6 flex justify-between items-center">
+<span class="text-[11px] font-semibold tracking-wider text-ink-muted uppercase">03 / ARCH</span>
+<div class="w-9 h-9 rounded-full bg-white flex items-center justify-center text-ink-primary shadow-sm hover:bg-terracotta hover:text-white transition-colors">
+<span class="text-sm">→</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Admin & Event Ops (Sage) -->
+<div class="bg-sage/50 hover:bg-sage/80 rounded-3xl p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-card min-h-[380px] border border-white/40">
+<div>
+<div class="w-12 h-12 rounded-full bg-white/80 flex items-center justify-center text-olive mb-6 shadow-sm">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<h3 class="font-editorial text-xl font-bold uppercase tracking-tight text-ink-primary">
+                ADMIN &amp; EVENT<br>OPERATIONS
+              </h3>
+<p class="mt-4 text-xs leading-relaxed text-ink-secondary">
+                Proven track record in fiscal administration, cashflow accountability, formal documentation, and end-to-end event rundowns across community programs.
+              </p>
+</div>
+<div class="pt-6 flex justify-between items-center">
+<span class="text-[11px] font-semibold tracking-wider text-ink-muted uppercase">04 / OPS</span>
+<div class="w-9 h-9 rounded-full bg-white flex items-center justify-center text-ink-primary shadow-sm hover:bg-terracotta hover:text-white transition-colors">
+<span class="text-sm">→</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FocusAreas -->
+<!-- BEGIN: FeaturedProjects -->
+<section class="py-16 bg-[#F4EEE7]" data-purpose="featured-work" id="projects">
+<div class="max-w-7xl mx-auto px-6 sm:px-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<p class="text-xs uppercase tracking-[0.25em] font-semibold text-terracotta">SELECTED WORK</p>
+<h2 class="font-editorial text-3xl sm:text-5xl font-semibold text-ink-primary mt-2">
+              Featured Case Studies
+            </h2>
+</div>
+<p class="text-xs text-ink-secondary max-w-sm mt-4 md:mt-0 leading-relaxed">
+            Curated student deliverables demonstrating web publishing, digital storytelling, and visual synthesis.
+          </p>
+</div>
+<!-- Project Spotlight Card -->
+<div class="bg-surface rounded-4xl p-8 sm:p-12 shadow-card border border-[#2D2724]/5">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Left Info Details -->
+<div class="lg:col-span-6 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<span class="px-3 py-1 rounded-full bg-sand text-ink-secondary text-[11px] font-semibold tracking-wider">
+                    2026 · PERSONAL WORK
+                  </span>
+<span class="px-3 py-1 rounded-full bg-blush/60 text-terracotta text-[11px] font-semibold tracking-wider">
+                    WIX &amp; CANVA
+                  </span>
+</div>
+<h3 class="font-editorial text-2xl sm:text-3xl font-semibold text-ink-primary leading-snug">
+                  Personal Website &amp; Article-Based Infographics
+                </h3>
+<p class="mt-4 text-sm text-ink-secondary leading-relaxed font-light">
+                  A personal web portal showcasing original informational article writing, infographics creation, and multimedia portfolio elements. Engineered with custom visual hierarchy, accessible typography, and intuitive navigation.
+                </p>
+<!-- Project Key Highlights -->
+<div class="mt-6 space-y-3">
+<div class="flex items-start gap-3">
+<span class="text-terracotta mt-0.5">✦</span>
+<p class="text-xs text-ink-secondary"><strong class="text-ink-primary">Information Architecture:</strong> Clear categorisation for essays, student bio, and creative deliverables.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-terracotta mt-0.5">✦</span>
+<p class="text-xs text-ink-secondary"><strong class="text-ink-primary">Infographic Synthesis:</strong> Visual breakdowns of complex academic topics designed for quick retention.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-terracotta mt-0.5">✦</span>
+<p class="text-xs text-ink-secondary"><strong class="text-ink-primary">Color Harmony:</strong> Thoughtfully calibrated soft neutral aesthetics that maximize legibility.</p>
+</div>
+</div>
+</div>
+<!-- Button Link to Wix -->
+<div class="mt-8 pt-6 border-t border-[#2D2724]/10">
+<a class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-olive text-white text-xs font-semibold tracking-wider uppercase hover:bg-olive-hover transition-all shadow-md hover:scale-[1.02]" href="https://andiniputriihsani.wixsite.com/andinipi" rel="noopener noreferrer" target="_blank">
+<span>VISIT LIVE WEBSITE</span>
+<span>↗</span>
+</a>
+</div>
+</div>
+<!-- Right: Browser Preview Container with Soft Aesthetic Frame -->
+<div class="lg:col-span-6">
+<div class="relative rounded-3xl bg-[#FAF6F2] p-5 border border-[#2D2724]/8 shadow-inner">
+<!-- Browser Tab Bar Simulation -->
+<div class="flex items-center justify-between pb-3 mb-4 border-b border-[#2D2724]/10">
+<div class="flex items-center space-x-1.5">
+<span class="w-3 h-3 rounded-full bg-[#E57A64]/70"></span>
+<span class="w-3 h-3 rounded-full bg-[#E5C158]/70"></span>
+<span class="w-3 h-3 rounded-full bg-[#82B980]/70"></span>
+</div>
+<span class="text-[10px] font-mono text-ink-muted bg-white px-3 py-1 rounded-full border border-[#2D2724]/5">
+                    andiniputriihsani.wixsite.com/andinipi
+                  </span>
+<span class="text-xs text-ink-muted">🔒</span>
+</div>
+<!-- Showcase Preview Card Canvas -->
+<div class="bg-white rounded-2xl p-6 shadow-sm border border-[#2D2724]/5 space-y-4">
+<!-- Mini Hero Simulation inside Mockup -->
+<div class="h-32 rounded-xl bg-gradient-to-r from-blush/80 via-sand to-sage/50 p-4 flex flex-col justify-center">
+<span class="text-[9px] uppercase tracking-widest text-terracotta font-bold">Portfolio Hub</span>
+<p class="font-editorial text-xl font-bold text-ink-primary">Andini Putri Ihsani</p>
+<p class="text-[11px] text-ink-secondary mt-1">Information Systems · ITPLN 2026</p>
+</div>
+<!-- Two-column content snippet -->
+<div class="grid grid-cols-2 gap-3">
+<div class="p-3.5 rounded-xl bg-[#FAF6F2] border border-[#2D2724]/5">
+<span class="text-[10px] font-bold text-terracotta">ARTICLE #1</span>
+<p class="text-xs font-semibold text-ink-primary mt-1 line-clamp-1">Digital Ecosystems</p>
+<p class="text-[10px] text-ink-muted mt-1">Visual infographic synthesis and analysis on cloud databases.</p>
+</div>
+<div class="p-3.5 rounded-xl bg-[#FAF6F2] border border-[#2D2724]/5">
+<span class="text-[10px] font-bold text-terracotta">CREATIVE</span>
+<p class="text-xs font-semibold text-ink-primary mt-1 line-clamp-1">Visual Storytelling</p>
+<p class="text-[10px] text-ink-muted mt-1">Editorial layout, palette harmony, &amp; user empathy.</p>
+</div>
+</div>
+<!-- Tag pill indicators -->
+<div class="flex items-center justify-between text-[11px] text-ink-muted pt-2">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Live on Wix Cloud
+                    </span>
+<span class="font-mono text-[10px]">Desktop &amp; Mobile Ready</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FeaturedProjects -->
+<!-- BEGIN: BentoToolsAndProcess (Split: Tools + Academic Journey) -->
+<section class="py-20" data-purpose="skills-and-academic-timeline">
+<div class="max-w-7xl mx-auto px-6 sm:px-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Bento (Col 5): Tools I Use -->
+<div class="lg:col-span-5 bg-surface rounded-4xl p-8 sm:p-10 shadow-card border border-[#2D2724]/5 flex flex-col justify-between h-full">
+<div>
+<p class="text-xs uppercase tracking-[0.25em] font-semibold text-terracotta">STACK &amp; CAPABILITIES</p>
+<h3 class="font-editorial text-2xl sm:text-3xl font-semibold text-ink-primary mt-1 mb-8">
+                Tools &amp; Technical Skills
+              </h3>
+<!-- Tool Badges Grid matching reference layout -->
+<div class="grid grid-cols-4 gap-4">
+<!-- Tool 1: C++ -->
+<div class="flex flex-col items-center justify-center p-3 rounded-2xl bg-page border border-[#2D2724]/5 hover:border-terracotta transition-colors group">
+<div class="w-12 h-12 rounded-xl bg-white shadow-xs flex items-center justify-center font-bold text-xs text-ink-primary group-hover:scale-105 transition-transform">
+                    C++
+                  </div>
+<span class="text-[11px] font-medium text-ink-secondary mt-2">C++</span>
+</div>
+<!-- Tool 2: Canva -->
+<div class="flex flex-col items-center justify-center p-3 rounded-2xl bg-page border border-[#2D2724]/5 hover:border-terracotta transition-colors group">
+<div class="w-12 h-12 rounded-xl bg-[#00C4CC]/10 text-[#00C4CC] shadow-xs flex items-center justify-center font-bold text-xs group-hover:scale-105 transition-transform">
+                    Canva
+                  </div>
+<span class="text-[11px] font-medium text-ink-secondary mt-2">Canva</span>
+</div>
+<!-- Tool 3: Wix -->
+<div class="flex flex-col items-center justify-center p-3 rounded-2xl bg-page border border-[#2D2724]/5 hover:border-terracotta transition-colors group">
+<div class="w-12 h-12 rounded-xl bg-black text-white shadow-xs flex items-center justify-center font-bold text-xs group-hover:scale-105 transition-transform">
+                    Wix
+                  </div>
+<span class="text-[11px] font-medium text-ink-secondary mt-2">Wix Studio</span>
+</div>
+<!-- Tool 4: MS Word -->
+<div class="flex flex-col items-center justify-center p-3 rounded-2xl bg-page border border-[#2D2724]/5 hover:border-terracotta transition-colors group">
+<div class="w-12 h-12 rounded-xl bg-[#2B579A]/10 text-[#2B579A] shadow-xs flex items-center justify-center font-bold text-xs group-hover:scale-105 transition-transform">
+                    Word
+                  </div>
+<span class="text-[11px] font-medium text-ink-secondary mt-2">MS Word</span>
+</div>
+<!-- Tool 5: MS Excel -->
+<div class="flex flex-col items-center justify-center p-3 rounded-2xl bg-page border border-[#2D2724]/5 hover:border-terracotta transition-colors group">
+<div class="w-12 h-12 rounded-xl bg-[#217346]/10 text-[#217346] shadow-xs flex items-center justify-center font-bold text-xs group-hover:scale-105 transition-transform">
+                    Excel
+                  </div>
+<span class="text-[11px] font-medium text-ink-secondary mt-2">MS Excel</span>
+</div>
+<!-- Tool 6: PowerPoint -->
+<div class="flex flex-col items-center justify-center p-3 rounded-2xl bg-page border border-[#2D2724]/5 hover:border-terracotta transition-colors group">
+<div class="w-12 h-12 rounded-xl bg-[#D24726]/10 text-[#D24726] shadow-xs flex items-center justify-center font-bold text-xs group-hover:scale-105 transition-transform">
+                    PPT
+                  </div>
+<span class="text-[11px] font-medium text-ink-secondary mt-2">PowerPoint</span>
+</div>
+<!-- Tool 7: GitHub -->
+<div class="flex flex-col items-center justify-center p-3 rounded-2xl bg-page border border-[#2D2724]/5 hover:border-terracotta transition-colors group">
+<div class="w-12 h-12 rounded-xl bg-ink-primary/10 text-ink-primary shadow-xs flex items-center justify-center font-bold text-xs group-hover:scale-105 transition-transform">
+                    Git
+                  </div>
+<span class="text-[11px] font-medium text-ink-secondary mt-2">GitHub</span>
+</div>
+<!-- Tool 8: Wazuh -->
+<div class="flex flex-col items-center justify-center p-3 rounded-2xl bg-page border border-[#2D2724]/5 hover:border-terracotta transition-colors group">
+<div class="w-12 h-12 rounded-xl bg-terracotta/15 text-terracotta shadow-xs flex items-center justify-center font-bold text-xs group-hover:scale-105 transition-transform">
+                    Wazuh
+                  </div>
+<span class="text-[11px] font-medium text-ink-secondary mt-2">Security</span>
+</div>
+</div>
+<!-- Soft Skills Pill Tags -->
+<div class="mt-8 pt-6 border-t border-[#2D2724]/10">
+<p class="text-[11px] font-semibold uppercase tracking-wider text-ink-muted mb-3">Interpersonal &amp; Practical Strengths</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-full bg-sand text-ink-primary text-xs">Teamwork &amp; Leadership</span>
+<span class="px-3 py-1.5 rounded-full bg-blush/60 text-ink-primary text-xs">Public Communication</span>
+<span class="px-3 py-1.5 rounded-full bg-sage/40 text-ink-primary text-xs">Time Management</span>
+<span class="px-3 py-1.5 rounded-full bg-sand text-ink-primary text-xs">Adaptability</span>
+<span class="px-3 py-1.5 rounded-full bg-blush/60 text-ink-primary text-xs">Financial Administration</span>
+<span class="px-3 py-1.5 rounded-full bg-sage/40 text-ink-primary text-xs">Problem Solving</span>
+</div>
+</div>
+</div>
+<!-- Footer indicator -->
+<div class="mt-8 pt-4 flex items-center justify-between text-xs text-ink-secondary">
+<span>Continually expanding skills</span>
+<span class="text-terracotta font-semibold">&amp; more tools →</span>
+</div>
+</div>
+<!-- Right Bento (Col 7): Education & Academic Journey Timeline -->
+<div class="lg:col-span-7 bg-surface rounded-4xl p-8 sm:p-10 shadow-card border border-[#2D2724]/5" id="about">
+<p class="text-xs uppercase tracking-[0.25em] font-semibold text-terracotta">ACADEMIC EXCELLENCE</p>
+<h3 class="font-editorial text-2xl sm:text-3xl font-semibold text-ink-primary mt-1 mb-8">
+              Education &amp; Certifications
+            </h3>
+<!-- Numbered Timeline Process items matching 'MY PROCESS' from reference -->
+<div class="space-y-6">
+<!-- Item 01: ITPLN -->
+<div class="flex items-start gap-4 pb-6 border-b border-[#2D2724]/8">
+<div class="w-10 h-10 rounded-full bg-blush/60 text-terracotta font-editorial font-bold flex items-center justify-center shrink-0">
+                  01
+                </div>
+<div class="flex-1">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<h4 class="font-bold text-sm tracking-wide text-ink-primary uppercase">
+                      Institut Teknologi PLN (ITPLN)
+                    </h4>
+<span class="text-xs font-mono font-medium text-terracotta bg-blush/30 px-2.5 py-0.5 rounded-full w-fit">
+                      2026 – Present
+                    </span>
+</div>
+<p class="text-xs font-medium text-ink-secondary mt-1">S1 Information Systems (Sistem Informasi) · Ikatan Kerja Scholar</p>
+<p class="text-xs text-ink-muted mt-2 leading-relaxed">
+                    Selected for the prestigious Ikatan Kerja corporate pathway. Active focus on database design, discrete structures, and systems analysis.
+                  </p>
+</div>
+</div>
+<!-- Item 02: SMAN 1 Nogosari -->
+<div class="flex items-start gap-4 pb-6 border-b border-[#2D2724]/8">
+<div class="w-10 h-10 rounded-full bg-sand text-ink-secondary font-editorial font-bold flex items-center justify-center shrink-0">
+                  02
+                </div>
+<div class="flex-1">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<h4 class="font-bold text-sm tracking-wide text-ink-primary uppercase">
+                      SMA Negeri 1 Nogosari
+                    </h4>
+<span class="text-xs font-mono font-medium text-ink-secondary bg-sand/60 px-2.5 py-0.5 rounded-full w-fit">
+                      Graduated 2026
+                    </span>
+</div>
+<p class="text-xs font-medium text-ink-secondary mt-1">High School Diploma · Science &amp; Mathematics Stream</p>
+<p class="text-xs text-ink-muted mt-2 leading-relaxed">
+                    Graduated with a stellar cumulative GPA of <strong class="text-ink-primary font-semibold">95.84/100</strong>. Recognized for top academic performance and leadership in student committees.
+                  </p>
+</div>
+</div>
+<!-- Item 03: ITPLN Academic Seminar -->
+<div class="flex items-start gap-4 pb-6 border-b border-[#2D2724]/8">
+<div class="w-10 h-10 rounded-full bg-sage/60 text-olive font-editorial font-bold flex items-center justify-center shrink-0">
+                  03
+                </div>
+<div class="flex-1">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<h4 class="font-bold text-sm tracking-wide text-ink-primary uppercase">
+                      Academic Seminar: IT Innovation &amp; Ethics
+                    </h4>
+<span class="text-xs font-mono font-medium text-olive bg-sage/30 px-2.5 py-0.5 rounded-full w-fit">
+                      Certified 2026
+                    </span>
+</div>
+<p class="text-xs font-medium text-ink-secondary mt-1">Institut Teknologi PLN</p>
+<p class="text-xs text-ink-muted mt-2 leading-relaxed">
+                    Exploration of ethical technology deployment, enterprise architecture standards, and data governance best practices.
+                  </p>
+</div>
+</div>
+<!-- Item 04: Wazuh Cybersecurity Workshop -->
+<div class="flex items-start gap-4 pb-6 border-b border-[#2D2724]/8">
+<div class="w-10 h-10 rounded-full bg-blush/60 text-terracotta font-editorial font-bold flex items-center justify-center shrink-0">
+                  04
+                </div>
+<div class="flex-1">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<h4 class="font-bold text-sm tracking-wide text-ink-primary uppercase">
+                      Hands-on Cybersecurity Workshop: Wazuh
+                    </h4>
+<span class="text-xs font-mono font-medium text-terracotta bg-blush/30 px-2.5 py-0.5 rounded-full w-fit">
+                      Workshop 2026
+                    </span>
+</div>
+<p class="text-xs font-medium text-ink-secondary mt-1">SIEM &amp; Security Threat Monitoring Fundamentals</p>
+<p class="text-xs text-ink-muted mt-2 leading-relaxed">
+                    Practical immersion in Wazuh open-source security platform, endpoint threat intelligence, and basic telemetry monitoring.
+                  </p>
+</div>
+</div>
+<!-- Item 05: MTsN 1 Karanganyar -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-sand text-ink-secondary font-editorial font-bold flex items-center justify-center shrink-0">
+                  05
+                </div>
+<div class="flex-1">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<h4 class="font-bold text-sm tracking-wide text-ink-primary uppercase">
+                      MTs Negeri 1 Karanganyar
+                    </h4>
+<span class="text-xs font-mono font-medium text-ink-secondary bg-sand/60 px-2.5 py-0.5 rounded-full w-fit">
+                      2020 – 2023
+                    </span>
+</div>
+<p class="text-xs font-medium text-ink-secondary mt-1">Junior Secondary Education</p>
+<p class="text-xs text-ink-muted mt-1 leading-relaxed">
+                    Foundation in academic disciplines, logic, and early student organization involvement.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: BentoToolsAndProcess -->
+<!-- BEGIN: LeadershipExperience -->
+<section class="py-16 bg-[#F4EEE7]" data-purpose="organizational-experience" id="experience">
+<div class="max-w-7xl mx-auto px-6 sm:px-10">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<p class="text-xs uppercase tracking-[0.25em] font-semibold text-terracotta">LEADERSHIP &amp; TEAMWORK</p>
+<h2 class="font-editorial text-3xl sm:text-4xl font-semibold text-ink-primary mt-2">
+            Organizational &amp; Committee Roles
+          </h2>
+<p class="text-xs sm:text-sm text-ink-secondary mt-3">
+            Real-world event execution, administrative oversight, and community stewardship.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Experience Card 1 -->
+<div class="bg-surface rounded-3xl p-8 shadow-card border border-[#2D2724]/5 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between text-xs mb-4">
+<span class="font-mono text-terracotta font-semibold">2023 – 2026</span>
+<span class="px-2.5 py-1 rounded-full bg-blush/50 text-ink-secondary text-[11px] font-medium">Finance Lead</span>
+</div>
+<h3 class="font-editorial text-xl font-bold text-ink-primary">
+                Bendahara (Treasurer)
+              </h3>
+<p class="text-xs font-semibold text-terracotta mt-1">
+                Panitia Semarak 17 Agustus Karang Taruna Mudatama
+              </p>
+<p class="text-xs text-ink-secondary mt-4 leading-relaxed font-light">
+                Entrusted with managing end-to-end event budgeting, cash flow reconciliation, sponsorships, and transparent post-event financial reporting for community celebrations.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#2D2724]/8 flex items-center justify-between text-[11px] text-ink-muted">
+<span>Financial Accuracy</span>
+<span class="text-terracotta font-medium">100% Accounted</span>
+</div>
+</div>
+<!-- Experience Card 2 -->
+<div class="bg-surface rounded-3xl p-8 shadow-card border border-[#2D2724]/5 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between text-xs mb-4">
+<span class="font-mono text-olive font-semibold">2025</span>
+<span class="px-2.5 py-1 rounded-full bg-sage/50 text-ink-secondary text-[11px] font-medium">Administration</span>
+</div>
+<h3 class="font-editorial text-xl font-bold text-ink-primary">
+                Sekretaris (Secretary)
+              </h3>
+<p class="text-xs font-semibold text-olive mt-1">
+                Panitia Pengajian Nuzulul Qur'an SMAN 1 Nogosari
+              </p>
+<p class="text-xs text-ink-secondary mt-4 leading-relaxed font-light">
+                Spearheaded formal administrative letters, protocol proposals, event attendance tracking, speaker coordination, and official archive documentation for the high school anniversary.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#2D2724]/8 flex items-center justify-between text-[11px] text-ink-muted">
+<span>Institutional Comms</span>
+<span class="text-olive font-medium">Official Liaison</span>
+</div>
+</div>
+<!-- Experience Card 3 -->
+<div class="bg-surface rounded-3xl p-8 shadow-card border border-[#2D2724]/5 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between text-xs mb-4">
+<span class="font-mono text-terracotta font-semibold">2025</span>
+<span class="px-2.5 py-1 rounded-full bg-blush/50 text-ink-secondary text-[11px] font-medium">Operations</span>
+</div>
+<h3 class="font-editorial text-xl font-bold text-ink-primary">
+                Event Division &amp; Secretary
+              </h3>
+<p class="text-xs font-semibold text-terracotta mt-1">
+                Panitia Semarak Ramadhan Karang Taruna Mudatama
+              </p>
+<p class="text-xs text-ink-secondary mt-4 leading-relaxed font-light">
+                Structured dynamic activity timelines, supervised guest logistics, and authored comprehensive operational rundowns ensuring smooth execution of religious community festivities.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#2D2724]/8 flex items-center justify-between text-[11px] text-ink-muted">
+<span>Event Operations</span>
+<span class="text-terracotta font-medium">Seamless Flow</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: LeadershipExperience -->
+<!-- BEGIN: CTABanner (Matching the reference's bottom banner card) -->
+<section class="py-16" data-purpose="collaboration-cta" id="contact">
+<div class="max-w-7xl mx-auto px-6 sm:px-10">
+<div class="relative bg-sage/60 rounded-4xl p-8 sm:p-14 overflow-hidden border border-white/60 shadow-card">
+<!-- Background botanical accent -->
+<svg class="absolute -right-8 -bottom-10 w-72 h-72 text-olive/15 pointer-events-none transform -rotate-12" fill="none" stroke="currentColor" viewBox="0 0 100 100">
+<path d="M50,95 C50,45 80,10 95,5" stroke-linecap="round" stroke-width="1.5"></path>
+<path d="M65,40 C75,35 85,20 75,12 C65,18 60,25 65,40 Z" fill="rgba(84, 86, 67, 0.08)" stroke-width="1.2"></path>
+<path d="M55,60 C70,55 78,42 70,35 C60,40 55,50 55,60 Z" fill="rgba(84, 86, 67, 0.08)" stroke-width="1.2"></path>
+</svg>
+<div class="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+<!-- Headline block -->
+<div class="max-w-xl">
+<span class="text-xs uppercase tracking-[0.25em] font-semibold text-olive">GET CONNECTED</span>
+<h2 class="font-editorial text-3xl sm:text-5xl font-semibold text-ink-primary leading-tight mt-2">
+                LET'S CREATE <br>
+<span class="italic font-normal text-terracotta">something extraordinary</span>
+</h2>
+<p class="mt-4 text-xs sm:text-sm text-ink-secondary leading-relaxed">
+                I am actively open for student collaborations, academic projects, technical discussions, and professional growth opportunities.
+              </p>
+</div>
+<!-- Action button & contact quick link -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+<a class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-olive text-white text-xs font-semibold tracking-wider uppercase hover:bg-olive-hover transition-all duration-300 shadow-md hover:scale-105" href="mailto:andiniputriihsani@gmail.com">
+<span>LET'S WORK TOGETHER</span>
+<span>→</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-4 rounded-full bg-white/80 hover:bg-white text-ink-primary text-xs font-semibold tracking-wider transition-colors shadow-sm" href="https://wa.me/6287720001106" rel="noopener noreferrer" target="_blank">
+<span>WHATSAPP</span>
+<span class="text-emerald-600">●</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: CTABanner -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="pt-8 pb-12 border-t border-[#2D2724]/8" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-6 sm:px-10">
+<!-- Top Row: Socials & Quick Email -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-[#2D2724]/5">
+<!-- Social Icons / Links -->
+<div class="flex items-center space-x-6 text-sm text-ink-secondary">
+<a class="hover:text-terracotta transition-colors flex items-center gap-1.5 text-xs font-medium" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<span>LinkedIn</span>
+</a>
+<a class="hover:text-terracotta transition-colors flex items-center gap-1.5 text-xs font-medium" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span>Instagram</span>
+</a>
+<a class="hover:text-terracotta transition-colors flex items-center gap-1.5 text-xs font-medium" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<span>GitHub</span>
+</a>
+<a class="hover:text-terracotta transition-colors flex items-center gap-1.5 text-xs font-medium" href="https://andiniputriihsani.wixsite.com/andinipi" rel="noopener noreferrer" target="_blank">
+<span>Wix Portfolio</span>
+</a>
+</div>
+<!-- Direct Email Link -->
+<div class="flex items-center gap-2 text-xs font-medium text-ink-primary">
+<svg class="w-4 h-4 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<a class="hover:text-terracotta transition-colors" href="mailto:andiniputriihsani@gmail.com">
+            andiniputriihsani@gmail.com
+          </a>
+<span class="text-ink-muted">·</span>
+<span class="text-ink-secondary">+62 877-2000-1106</span>
+</div>
+</div>
+<!-- Bottom Row: Copyright & Location Note -->
+<div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-ink-muted gap-4">
+<p>© 2026 Andini Putri Ihsani. All Rights Reserved.</p>
+<p class="flex items-center gap-2">
+<span>Institut Teknologi PLN</span>
+<span>•</span>
+<span>Jakarta Barat, Indonesia</span>
+</p>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+
+
+</body></html>

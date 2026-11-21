@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-page: #FAF6F2;
+  --color-surface: #FFFFFF;
+  --color-blush: #F1D9D1;
+  --color-sage: #D8D8CE;
+  --color-sage-light: #E9E9E2;
+  --color-sand: #ECE4DC;
+  --color-terracotta: #D38B78;
+  --color-terracotta-hover: #C27763;
+  --color-terracotta-subtle: #FAF0ED;
+  --color-olive: #545643;
+  --color-olive-hover: #424434;
+  --color-olive-light: #828471;
+  --color-ink-primary: #2D2724;
+  --color-ink-secondary: #6E6560;
+  --color-ink-muted: #9A908A;
+
+  --font-editorial: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --shadow-soft: 0 10px 30px -5px rgba(45, 39, 36, 0.05);
+  --shadow-card: 0 20px 40px -15px rgba(45, 39, 36, 0.08);
+  --shadow-hover: 0 25px 50px -12px rgba(211, 139, 120, 0.25);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #FAF6F2;
+    color: #2D2724;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+.font-editorial {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.bg-grain {
+  background-image: radial-gradient(rgba(45, 39, 36, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.arch-mask {
+  border-radius: 260px 260px 24px 24px;
+}
